@@ -32,7 +32,7 @@ public class Qn {
       
     }
     public static void main(String[] args) {
-        int numbers[] = {10,20,12,30,50};
+        int numbers[] = {18,30,60,70,40,50};
         System.out.println("largest value is:"+getLargest(numbers));
      
 }

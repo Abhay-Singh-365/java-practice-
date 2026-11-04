@@ -96,7 +96,7 @@ public class matrices{
     System.out.println();
     }
  public static void main (String args[]){
-  int matrix[][] = {{1, 2 ,3, 4},{5, 6 ,7, 8},{9, 10, 11, 12},{13, 14, 15, 16}};
+  int matrix[][] = {{5, 4 ,2, 1},{3, 7 ,6, 9},{8, 11, 10, 14},{13, 12, 15, 16}};
   printSpiral(matrix);
  }
 

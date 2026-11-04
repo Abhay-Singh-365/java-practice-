@@ -20,7 +20,7 @@ public class Qn {
 */
 
 
-public class Qn {
+ public class Qn {
     public static int getLargest( int numbers[]){
       int largest = Integer.MAX_VALUE;
         for ( int i=0; i< numbers.length; i++){
@@ -32,7 +32,7 @@ public class Qn {
       
     }
     public static void main(String[] args) {
-        int numbers[] = {18,30,60,70,40,50};
+        int numbers[] = {17,39,58,83,75,35};
         System.out.println("largest value is:"+getLargest(numbers));
      
 }

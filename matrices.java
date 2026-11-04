@@ -59,7 +59,8 @@ import java.util.*;
 
 // v.Imt Qn. spiral matrix
 
-public class matrices{
+
+   /*  public class matrices{
     public static void printSpiral(int matrix [][]){
         int startRow = 0;
         int startCol = 0;
@@ -81,8 +82,7 @@ public class matrices{
         }
         System.out.print(matrix[endRow][j]+" ");
     }
-    //left
-     for(int i=endRow-1; i>=startRow+1; i--){
+    //left for(int i=endRow-1; i>=startRow+1; i--){
         if(startCol == endCol){
              break;
         }
@@ -101,4 +101,82 @@ public class matrices{
  }
 
 
+}*/
+
+
+
+public class matrices {
+    public static void printSpiralAndFindLargest(int matrix[][]) {
+        int startRow = 0;
+        int startCol = 0;
+        int endRow = matrix.length - 1;
+        int endCol = matrix[0].length - 1;
+
+        // Largest element ko track karne ke liye variable (Integer ki minimum value se start kiya)
+        int largest = Integer.MIN_VALUE;
+
+        System.out.print("Spiral Order: ");
+
+        while (startRow <= endRow && startCol <= endCol) {
+            // 1. Top Boundary
+            for (int j = startCol; j <= endCol; j++) {
+                System.out.print(matrix[startRow][j] + " ");
+                if (matrix[startRow][j] > largest) {
+                    largest = matrix[startRow][j];
+                }
+            }
+
+            // 2. Right Boundary
+            for (int i = startRow + 1; i <= endRow; i++) {
+                System.out.print(matrix[i][endCol] + " ");
+                if (matrix[i][endCol] > largest) {
+                    largest = matrix[i][endCol];
+                }
+            }
+
+            // 3. Bottom Boundary
+            for (int j = endCol - 1; j >= startCol; j--) {
+                // AGAR SINGLE ROW BACHI HAI TO DOUBLE PRINTING SE BACHNE KE LIYE
+                if (startRow == endRow) {
+                    break;
+                }
+                System.out.print(matrix[endRow][j] + " ");
+                if (matrix[endRow][j] > largest) {
+                    largest = matrix[endRow][j];
+                }
+            }
+
+            // 4. Left Boundary
+            for (int i = endRow - 1; i >= startRow + 1; i--) {
+                // AGAR SINGLE COLUMN BACHA HAI TO DOUBLE PRINTING SE BACHNE KE LIYE
+                if (startCol == endCol) {
+                    break;
+                }
+                System.out.print(matrix[i][startCol] + " ");
+                if (matrix[i][startCol] > largest) {
+                    largest = matrix[i][startCol];
+                }
+            }
+
+            startCol++;
+            startRow++;
+            endCol--;
+            endRow--;
+        }
+        System.out.println();
+        // Largest number ko print karne ke liye
+        System.out.println("Largest Element: " + largest); 
+    }
+
+    public static void main(String args[]) {
+        int matrix[][] = {
+            {5, 4, 2, 1},
+            {3, 7, 6, 9},
+            {8, 11, 10, 14},
+            {13, 12, 15, 16}
+        };
+        
+        printSpiralAndFindLargest(matrix);
+    }
 }
+

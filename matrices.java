@@ -181,7 +181,7 @@ import java.util.*;
 }*/
 
 public class matrices {  
-   public static int digonalSum(int matrix[] []){
+  /*public static int digonalSum(int matrix[] []){
     int sum  = 0;
     for(int i = 0; i<matrix.length; i++){
         for(int j= 0; j<matrix[0].length; j++){
@@ -194,9 +194,22 @@ public class matrices {
         }
     }
     return sum;
-   }
+   }*/
 
-
+  public static int digonalSum(int matrix[][]){
+    int sum = 0;
+    for(int i=0; i<matrix.length; i++){
+         //pd
+      sum+= matrix[i][i];
+         //sd 
+         if(i!= matrix.length -1-i){
+            sum+= matrix[i][matrix.length-i-1];
+            
+        }
+      }
+    return sum ;
+      }
+  
 
 
     public static void main( String args[]){
@@ -204,3 +217,5 @@ public class matrices {
         System.out.print( digonalSum (matrix));
     }
 }
+
+

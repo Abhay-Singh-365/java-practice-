@@ -105,7 +105,7 @@ import java.util.*;
 
 
 
- /*public class matrices {
+ public class matrices {
     public static void printSpiralAndFindLargest(int matrix[][]) {
         int startRow = 0;
         int startCol = 0;
@@ -173,12 +173,12 @@ import java.util.*;
             {5, 4, 2, 1},
             {3, 7, 6, 9},
             {8, 11, 10, 14},
-            {13, 12, 15, 16}
+            {12, 13, 16,15}
         };
         
         printSpiralAndFindLargest(matrix);
     }
-}*/
+}
 
 /*public class matrices {  
   /*public static int digonalSum(int matrix[] []){
@@ -220,7 +220,7 @@ import java.util.*;
 
 // search in sorted matrix 
 
-public class matrices{
+/*public class matrices{
   public static boolean staircaseSearch(int matrix[][] , int key){
     int row = 0,col = matrix[0].length-1;
     while(row<matrix.length && col>=0){
@@ -245,7 +245,7 @@ public class matrices{
         int key = 37;
         staircaseSearch(matrix,33);
     } 
-} 
+} */
 
 
 

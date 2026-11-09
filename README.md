@@ -1,8 +1,8 @@
 # java-practice-
 This is a repository for daily practice in java Qn.
 
-# array
+# starting topic is array
 
 # daily parctices session
 
-# only try the code
+# By apna college 

@@ -7,10 +7,13 @@ public class strings {
         String str2 = new String ("xyz");
         
         
-        // output in string 
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         String name;
         name = sc.nextLine();
-        System.out.println(name);
+        System.out.println(name);*/
+
+        // finding lingth in string 
+       String fullName = "Abhay singh";
+       System.out.println(fullName.length());
     }
 }

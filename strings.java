@@ -1,5 +1,7 @@
 
 import java.util.*;
+
+import javax.xml.crypto.dsig.SignatureMethod;
 public class strings {
     public static void main(String args[]){
         char arr[] = {'a', 'b', 'c', 'd',};
@@ -13,7 +15,15 @@ public class strings {
         System.out.println(name);*/
 
         // finding lingth in string 
-       String fullName = "Abhay singh";
-       System.out.println(fullName.length());
+       // String fullName = "Abhay singh";
+       //System.out.println(fullName.length());
+
+      String firstName = "Abhay" ;
+      String lastName = "Singh";
+      String fullName = firstName + " " + lastName;
+      System.out.println(fullName);
+
+
+
     }
 }

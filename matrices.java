@@ -105,20 +105,17 @@ import java.util.*;
 
 
 
- public class matrices {
+public class matrices {
     public static void printSpiralAndFindLargest(int matrix[][]) {
         int startRow = 0;
         int startCol = 0;
         int endRow = matrix.length - 1;
         int endCol = matrix[0].length - 1;
-
-        // Largest element ko track karne ke liye variable (Integer ki minimum value se start kiya)
         int largest = Integer.MIN_VALUE;
 
         System.out.print("Spiral Order: ");
 
         while (startRow <= endRow && startCol <= endCol) {
-            // 1. Top Boundary
             for (int j = startCol; j <= endCol; j++) {
                 System.out.print(matrix[startRow][j] + " ");
                 if (matrix[startRow][j] > largest) {
@@ -136,7 +133,6 @@ import java.util.*;
 
             // 3. Bottom Boundary
             for (int j = endCol - 1; j >= startCol; j--) {
-                // AGAR SINGLE ROW BACHI HAI TO DOUBLE PRINTING SE BACHNE KE LIYE
                 if (startRow == endRow) {
                     break;
                 }
@@ -148,7 +144,6 @@ import java.util.*;
 
             // 4. Left Boundary
             for (int i = endRow - 1; i >= startRow + 1; i--) {
-                // AGAR SINGLE COLUMN BACHA HAI TO DOUBLE PRINTING SE BACHNE KE LIYE
                 if (startCol == endCol) {
                     break;
                 }
@@ -164,7 +159,6 @@ import java.util.*;
             endRow--;
         }
         System.out.println();
-        // Largest number ko print karne ke liye
         System.out.println("Largest Element: " + largest); 
     }
 

@@ -6,7 +6,7 @@ public class strings {
     public static void main(String args[]){
         char arr[] = {'a', 'b', 'c', 'd',};
         String str = "abcd";
-        String str2 = new String ("xyz");
+        String str2 = new String ("fghijkl");
         
         
         /*Scanner sc = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class strings {
        // String fullName = "Abhay singh";
        //System.out.println(fullName.length());
 
-      String firstName = "Abhi" ;
+      String firstName = "Abhay" ;
       String lastName = "Singh";
       String fullName = firstName + " " + lastName;
       System.out.println(fullName );

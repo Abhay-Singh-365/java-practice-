@@ -18,7 +18,7 @@ public class strings {
        // String fullName = "Abhay singh";
        //System.out.println(fullName.length());
 
-      String firstName = "yougendra";
+      String firstName = "Abhay";
       String lastName = "Singh";
       String fullName = firstName + " " + lastName;
       System.out.println(fullName );
